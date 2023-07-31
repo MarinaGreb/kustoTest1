@@ -1,0 +1,24 @@
+
+{
+    "mainUser":{
+        "email": "sokovets@outlook.com",
+        "password": "123456",
+        "name": "Marina_Test"
+    },
+    "userWithShortPassword":{
+        "email": "sokovets@outlook.com",
+        "password": "12345",
+        "name": "Marina_Test"
+    },
+    "userWithWrongName":{
+        "email": "sokovets@outlook.com",
+        "password": "123456",
+        "name": "Marina_Test1"
+    },
+    "mainUserForRegistration":{
+        "email": "sokovets@outlook.com",
+        "password": "123456",
+        "name": "Marina_Test1"
+    }
+
+}

@@ -1,0 +1,3 @@
+{
+  "profileSettingsButton": "div#__next>div>div>div:nth-of-type(2)>div>button"
+}
