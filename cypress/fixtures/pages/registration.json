@@ -1,3 +1,8 @@
 {
-    
+    "nameField": "input[name='username']",
+    "emailField": "input[name='email']",
+    "passwordField": "input[name='password']",
+    "passwordConfirationField": "input[name='passwordConfirmation']",
+    "registrationButton": "button[type='submit']",
+    "emailSentConfirmation": ".Modalstyled__StyledBlockButton-sc-mfbgua-6 > .StyledButtonstyled__StyledButton-sc-1p9q4w9-0"   
 }

@@ -23,6 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import 'cypress-mailosaur'
+
 const loginPage = require("../fixtures/pages/loginPage.json");
 
 Cypress.Commands.add("login", (userName, password) => {
