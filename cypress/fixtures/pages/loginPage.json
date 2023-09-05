@@ -1,6 +1,6 @@
 {
   "loginField": "input[name='loginOrEmail']",
   "passwordField": "input[name='password']",
-  "loginButton": ".StyledButtonstyled__StyledButton-sc-1p9q4w9-0",
+  "loginButton": "form > button",
   "errorMessage": "#pass > :nth-child(3)"
 }

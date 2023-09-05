@@ -2,5 +2,14 @@
   "profileSettingsButton": "div#__next>div>div>div:nth-of-type(2)>div>button",
   "activeElement": ".active",
   "userNameField": ":nth-child(1) > .Formikstyled__StyledInputContainer-sc-1433s6r-2 > .Formikstyled__StyledField-sc-1433s6r-0",
-  "nameField": "input[name='username']"
+  "nameField": "input[name='username']",
+  "firstNameField": "input[name='firstname']",
+  "lastNameField": "input[name='lastname']",
+  "cityField": "input[name='city']",
+  "dateOfBirthdayField": "",
+  "aboutMeField": "textarea",
+  "confirmationChanges": "",
+  "saveButton": "div:nth-of-type(3)>button",
+  "calendar": "svg[data-testid='CalendarIcon']",
+  "arrowForYear": "svg[data-testid='ArrowDropDownIcon']"
 }

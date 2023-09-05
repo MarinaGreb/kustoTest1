@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://kusto-gord.vercel.app",
+    baseUrl: "https://kusto-gamma.vercel.app",
     specPattern: "**/*.cy.js",
     testIsolation: false,
     defaultCommandTimeout: 30000,
@@ -11,7 +11,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   env: {
-    MAILOSAUR_API_KEY: "UldWPLfXRyvoFvFMavEE9ApNLgwvubNI",
+    MAILOSAUR_API_KEY: "6W0M88br4tCzMEIWu7w0EiQmo2SWe5eo",
   },
   },
 });

@@ -4,7 +4,7 @@
     "passwordField": "input[name='password']",
     "passwordConfirationField": "input[name='passwordConfirmation']",
     "registrationButton": "button[type='submit']",
-    "emailSentConfirmation": ".Modalstyled__StyledBlockButton-sc-mfbgua-6 > .StyledButtonstyled__StyledButton-sc-1p9q4w9-0",   
-    "errorMessage": ".boHKqP > :nth-child(3)"
+    "emailSentConfirmation": "button[handler]",   
+    "errorMessage": " label > div:nth-child(3)"
 
 }

@@ -17,7 +17,7 @@ describe("Registration", () => {
     cy.visit("/ru/auth/registration");
   });
 
-  it.only("Registration with valid values", () => {
+  it("Registration with valid values", () => {
     cy.registration(userName, emailAddress, password)
     cy.get(registration.emailSentConfirmation).should("be.visible").click();
     cy.getMessageAndFollowingLink(mailServer.serverId, emailAddress)
@@ -37,16 +37,33 @@ describe("Registration", () => {
     cy.registration(userName, emailAddress, shortPassword)
     cy.get(registration.errorMessage).should("be.visible");
   });
+
+  it('Rigistration with already registered data', () => {
+    cy.registration(userName, emailAddress, password)
+    cy.get(registration.errorMessage).should("be.visible");
+  });
 });
 
 describe("Login after registration", () => {
   beforeEach(() => {
     cy.visit("/ru/auth/login");
   });
-  it("New user login ", () => {
-    cy.login(userName, password);
+  it("Login new user", () => {
+    cy.login(emailAddress, password);
     cy.get(profilePage.nameField).should((username) => {
       expect(username).to.have.value(userName);
     });
   });
   });
+
+  describe("Delete user after tests", () => {
+    beforeEach(() => {
+      cy.visit("/ru/auth/login");
+    });
+    it("Login new user", () => {
+      cy.login(emailAddress, password);
+      cy.get(profilePage.nameField).should((username) => {
+        expect(username).to.have.value(userName);
+      });
+    });
+    });

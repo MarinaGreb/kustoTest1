@@ -29,7 +29,8 @@ const loginPage = require("../fixtures/pages/loginPage.json");
 const registration = require("../fixtures/pages/registration.json");
 
 Cypress.Commands.add("login", (userName, password) => {
-  cy.get(loginPage.loginField).type(userName).should("have.value", userName);
+  cy.get(loginPage.loginField).type(userName);
+  cy.get(loginPage.loginField).should('have.value', userName);
   cy.get(loginPage.passwordField).type(password);
   cy.get(loginPage.loginButton).click({ force: true });
 });
